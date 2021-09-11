@@ -56,7 +56,8 @@ For dynamic viewing of currentPwr.png, a simple HTML page can be built.
 
 Simple index.html:
 
-'''<html>
+````
+<html>
         <link rel="icon" href="http://192.168.10.35/pvmon/pwricon.png">
              <title>Current PV</title>
 	      <meta http-equiv="refresh" content="30; url=index.html"> 
@@ -65,7 +66,7 @@ Simple index.html:
 		<p style="text-align:center;"><img src="currentPwr.png" alt="Current PV"></p>
 	</body>
 </html>
-'''
+````
 
 As you may have to run as root to post to /var/www, something like this should
 work and leave a log of any errors posted to stdout:
@@ -76,13 +77,14 @@ crontab:
 
 runInverter.sh:
 
-'''#!/bin/bash
+````
+#!/bin/bash
 if [ "$EUID" -ne 0 ]
     then echo "Please run as root"
     exit
 fi
 /usr/local/bin/python3.6 xxxx/inverter/froniator.py
-'''
+````
 
 ## Sources
 
