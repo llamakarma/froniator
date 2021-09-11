@@ -1,5 +1,4 @@
-Froniator
-=========
+# Froniator
 
 This tool captures data from Fronius inverters. It has been tested against
 a grid-tied Primo using python3.6 under linux.
@@ -32,8 +31,7 @@ froniator -t will output files to a different location to prevent stomping
              the production data you want to keep
 
 
-Outputs
-=======
+## Outputs
 
 CSV Files:
 - Daily kWh generated per run (YYYY-MM-DD.csv)
@@ -52,14 +50,13 @@ Files you might want to keep for the long term are stored by default in a
 different location (data/ by default) to the live files.
 
 
-Useful Scripts
-==============
+## Useful Scripts
 
 For dynamic viewing of currentPwr.png, a simple HTML page can be built.
 
 Simple index.html:
 
-<html>
+'''<html>
         <link rel="icon" href="http://192.168.10.35/pvmon/pwricon.png">
              <title>Current PV</title>
 	      <meta http-equiv="refresh" content="30; url=index.html"> 
@@ -68,7 +65,7 @@ Simple index.html:
 		<p style="text-align:center;"><img src="currentPwr.png" alt="Current PV"></p>
 	</body>
 </html>
-
+'''
 
 As you may have to run as root to post to /var/www, something like this should
 work and leave a log of any errors posted to stdout:
@@ -79,16 +76,15 @@ crontab:
 
 runInverter.sh:
 
-#!/bin/bash
+'''#!/bin/bash
 if [ "$EUID" -ne 0 ]
     then echo "Please run as root"
     exit
 fi
 /usr/local/bin/python3.6 xxxx/inverter/froniator.py
+'''
 
-
-Sources
-=======
+## Sources
 
 Froniator is based on Fronius-DataManager-Solar-Logger available here:
 
