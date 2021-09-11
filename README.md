@@ -73,7 +73,9 @@ work and leave a log of any errors posted to stdout:
 
 crontab:
 
+````
 * * * * * /xxxx/inverter/runInverter.sh >> xxxx/inverter/inverter.log 2>&1
+````
 
 runInverter.sh:
 
