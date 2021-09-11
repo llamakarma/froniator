@@ -77,7 +77,7 @@ WEBPATH = "/pvmon/data"                   # public path written to history.html
 LIVEIMAGE = "currentPwr.png"              # name of image updated each iter
 SUMMARYCSV = "dailytotals.csv"            # this file updates once per day with
 # timestamp, kWh total and peak kWh
-HISTORYHTML ="history.html"               # name of HTML file with daily images
+HISTORYHTML = "history.html"               # name of HTML file with daily images
 
 #   In test mode use this path for all files (def. same dir as the script)
 
