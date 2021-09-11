@@ -36,7 +36,7 @@ froniator -t will output files to a different location to prevent stomping
 CSV Files:
 - Daily kWh generated per run (YYYY-MM-DD.csv)
 - Daily kWh per string per run (5 min granularity) (YYYY-MM-DD-string.csv)
-- 1 x per day tracking of total kWh and peak kWh (dailytotals.csv)
+- End of day tracking of total kWh and peak kWh (dailytotals.csv)
 
 PNG Files:
 - Output since day start (currentPwr.png) updated every run
