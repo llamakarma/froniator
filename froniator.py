@@ -445,10 +445,10 @@ HISTORYHTML = os.path.join(LIVEPATH, HISTORYHTML)
 
 #   Check which files exist
 
-isDailyCsv = os.path.exists(dailyCsv)
+isDailyCsv = os.path.isfile(dailyCsv)
 isDailyPng = os.path.isfile(dailyPng)
 isStringCsv = os.path.isfile(stringCsv)
-isHistoryHtml = os.path.exists(HISTORYHTML)
+isHistoryHtml = os.path.isfile(HISTORYHTML)
 
 #   Set the HTML to write to the top of the history page source
 
