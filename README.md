@@ -58,7 +58,7 @@ Simple index.html:
 
 ````
 <html>
-        <link rel="icon" href="http://192.168.10.35/pvmon/pwricon.png">
+        <head>
              <title>Current PV</title>
 	      <meta http-equiv="refresh" content="30; url=index.html"> 
 	</head>
