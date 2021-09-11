@@ -34,7 +34,7 @@ froniator -t will output files to a different location to prevent stomping
 ## Outputs
 
 CSV Files:
-- Daily kWh generated per run (YYYY-MM-DD.csv)
+- Daily kWh updated per run (YYYY-MM-DD.csv)
 - Daily kWh per string per run (5 min granularity) (YYYY-MM-DD-string.csv)
 - End of day tracking of total kWh and peak kWh (dailytotals.csv)
 
@@ -44,7 +44,6 @@ PNG Files:
 
 HTML File:
 - New to old simple html of each summary PNG (history.html) (end of day)
-
 
 Files you might want to keep for the long term are stored by default in a
 different location (data/ by default) to the live files.
@@ -69,7 +68,9 @@ Simple index.html:
 ````
 
 As you may have to run as root to post to /var/www, something like this should
-work and leave a log of any errors posted to stdout:
+work and leave a log of any errors posted to stdout. I call the script from a shell 
+script, it makes it easy to change the script filename during dev/debug without 
+having to go to crontab -e each time.
 
 crontab:
 
