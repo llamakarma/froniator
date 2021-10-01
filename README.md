@@ -38,7 +38,7 @@ CSV Files:
 - Daily kWh per string per run (5 min granularity) (YYYY-MM-DD-string.csv)
 - End of day tracking of total kWh and peak kWh (dailytotals.csv)
 
-PNG Files:
+Graphs as PNG Files:
 - Output since day start (currentPwr.png) updated every run
 - Day summary (YYYY-MM-DD.png) updated at the end of the day
 
